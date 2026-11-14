@@ -1,0 +1,11 @@
+{
+  "name": "stockwise-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/brand.test.mjs",
+    "build": "node scripts/build.mjs",
+    "test:browser": "node tests/brand.browser.mjs"
+  }
+}

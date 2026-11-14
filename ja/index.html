@@ -3,8 +3,24 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>在庫Wise v3 — 在庫可視化アプリ</title>
+<title>Stockwise — 在庫・発注判断の可視化</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<meta name="description" content="Stockwiseで在庫・入荷予定・発注判断を見える化。確認が必要な商品を整理します。"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Stockwise"/>
+<meta property="og:title" content="Stockwise — 在庫・発注判断の可視化"/>
+<meta property="og:description" content="Stockwiseで在庫・入荷予定・発注判断を見える化。確認が必要な商品を整理します。"/>
+<meta property="og:url" content="https://stockwise-homepage.vercel.app/ja/"/>
+<meta property="og:locale" content="ja_JP"/>
+<meta property="og:image" content="https://stockwise-homepage.vercel.app/assets/social-preview.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Stockwise hexagonal logo and wordmark"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Stockwise — 在庫・発注判断の可視化"/>
+<meta name="twitter:description" content="Stockwiseで在庫・入荷予定・発注判断を見える化。確認が必要な商品を整理します。"/>
+<meta name="twitter:image" content="https://stockwise-homepage.vercel.app/assets/social-preview.png"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -500,6 +516,7 @@ body{
 .comp-item:last-child{border-bottom:none}
 .comp-icon{font-size:10px;flex-shrink:0}
 </style>
+<link rel="stylesheet" href="/assets/brand.css"/>
 </head>
 <body>
 <div class="canvas">
@@ -520,7 +537,7 @@ body{
   <!-- ── HERO ── -->
   <div class="hero" style="position:relative;z-index:2">
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:flex-start">
+    <div class="hero-layout" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:flex-start">
 
       <!-- Left -->
       <div>
@@ -530,13 +547,12 @@ body{
           <span class="top-badge-text">在庫管理・入荷予定・発注判断サポート</span>
         </div>
 
-        <div class="logo-row">
-          <div class="logo-icon">📦</div>
-          <div>
-            <div class="logo-text">在庫Wise</div>
+        <header class="logo-row">
+          <div class="brand-identity">
+            <img class="brand-logo" src="/assets/stockwise-logo.png" width="584" height="126" alt="Stockwise"/>
             <div class="logo-sub">在庫を見える化し、判断を早くする。</div>
           </div>
-        </div>
+        </header>
 
         <div class="headline">
           今日、何を<br/>
@@ -545,7 +561,7 @@ body{
         </div>
 
         <div class="subhead">
-          在庫Wiseは、在庫・入荷予定・リードタイムを見える化し、発注判断をサポートする在庫可視化アプリです。Shopify、EC、リテール、小規模ブランドの在庫切れ・過剰在庫を防ぎます。
+          Stockwiseは、在庫・入荷予定・リードタイムを見える化し、発注判断をサポートする在庫可視化アプリです。Shopify、EC、リテール、小規模ブランドの在庫切れ・過剰在庫を防ぎます。
         </div>
 
         <div class="pill-row">
@@ -632,8 +648,7 @@ body{
         <!-- Sidebar -->
         <div class="dash-sidebar">
           <div class="dash-brand">
-            <div class="dash-brand-icon">S</div>
-            <div class="dash-brand-name">在庫Wise</div>
+            <img class="dash-brand-logo" src="/assets/stockwise-logo.png" width="584" height="126" alt="Stockwise"/>
           </div>
           <div class="nav-item active"><div class="nav-dot"></div>ダッシュボード</div>
           <div class="nav-item"><div class="nav-dot"></div>在庫管理</div>
@@ -754,7 +769,7 @@ body{
       <div class="feat-card">
         <span class="feat-icon">🚢</span>
         <div class="feat-title">SSN追跡</div>
-        <div class="feat-desc">在庫wise Serial Numbers — register inbound shipments by supplier CSV, track confidence scores and ETA.</div>
+        <div class="feat-desc">Stockwise Serial Numbers — register inbound shipments by supplier CSV, track confidence scores and ETA.</div>
         <span class="feat-tag" style="background:rgba(30,111,255,0.15);color:var(--blue)">Proプラン</span>
       </div>
       <div class="feat-card">
@@ -778,7 +793,7 @@ body{
       </div>
       <div class="comp-card good">
         <div class="comp-head" style="color:var(--green)">
-          <span>✓</span> 在庫Wise Basic · $49/mo
+          <span>✓</span> Stockwise Basic · $49/mo
         </div>
         <div class="comp-item"><span class="comp-icon" style="color:var(--green)">✓</span> 発注ポイントを自動計算</div>
         <div class="comp-item"><span class="comp-icon" style="color:var(--green)">✓</span> 12-week LTパイプライン</div>
@@ -787,7 +802,7 @@ body{
       </div>
       <div class="comp-card best">
         <div class="comp-head" style="color:var(--cyan)">
-          <span>★</span> 在庫Wise Pro · $149/mo
+          <span>★</span> Stockwise Pro · $149/mo
         </div>
         <div class="comp-item"><span class="comp-icon" style="color:var(--cyan)">✓</span> Basicの全機能</div>
         <div class="comp-item"><span class="comp-icon" style="color:var(--cyan)">✓</span> SSN追跡 + CSV import</div>
@@ -798,9 +813,9 @@ body{
   </div>
 
   <!-- ── BOTTOM STRIP ── -->
-  <div class="bottom-strip" style="position:relative;z-index:2">
+  <footer class="bottom-strip" style="position:relative;z-index:2">
     <div>
-      <div class="bottom-logo">📦 在庫Wise</div>
+      <div class="bottom-logo"><img class="brand-logo" src="/assets/stockwise-logo.png" width="584" height="126" alt="Stockwise" loading="lazy"/></div>
       <div class="bottom-tagline">在庫を見える化し、発注判断を早くする。日本語 / English。</div>
     </div>
     <div class="bottom-stats">
@@ -827,7 +842,7 @@ body{
 </a>
       <div style="font-size:9px;color:var(--dimmer);text-align:center;margin-top:6px">14日間無料 · クレジットカード不要</div>
     </div>
-  </div>
+  </footer>
 
 </div>
 </body>

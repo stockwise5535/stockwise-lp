@@ -3,8 +3,24 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>StockWise v3 — App Store Asset</title>
+<title>Stockwise — Inventory and reorder visibility</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<meta name="description" content="Stockwise helps teams see inventory, inbound shipments and reorder priorities."/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Stockwise"/>
+<meta property="og:title" content="Stockwise — Inventory and reorder visibility"/>
+<meta property="og:description" content="Stockwise helps teams see inventory, inbound shipments and reorder priorities."/>
+<meta property="og:url" content="https://stockwise-homepage.vercel.app/"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:image" content="https://stockwise-homepage.vercel.app/assets/social-preview.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Stockwise hexagonal logo and wordmark"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Stockwise — Inventory and reorder visibility"/>
+<meta name="twitter:description" content="Stockwise helps teams see inventory, inbound shipments and reorder priorities."/>
+<meta name="twitter:image" content="https://stockwise-homepage.vercel.app/assets/social-preview.png"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -500,6 +516,7 @@ body{
 .comp-item:last-child{border-bottom:none}
 .comp-icon{font-size:10px;flex-shrink:0}
 </style>
+<link rel="stylesheet" href="/assets/brand.css"/>
 </head>
 <body>
 <div class="canvas">
@@ -520,7 +537,7 @@ body{
   <!-- ── HERO ── -->
   <div class="hero" style="position:relative;z-index:2">
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:flex-start">
+    <div class="hero-layout" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:flex-start">
 
       <!-- Left -->
       <div>
@@ -529,13 +546,12 @@ body{
           <span class="top-badge-text">Supply Chain · Inventory · SSN Tracking</span>
         </div>
 
-        <div class="logo-row">
-          <div class="logo-icon">📦</div>
-          <div>
-            <div class="logo-text">StockWise</div>
+        <header class="logo-row">
+          <div class="brand-identity">
+            <img class="brand-logo" src="/assets/stockwise-logo.png" width="584" height="126" alt="Stockwise"/>
             <div class="logo-sub">SMARTER INVENTORY. BETTER DECISIONS.</div>
           </div>
-        </div>
+        </header>
 
         <div class="headline">
           Know What to<br/>
@@ -631,8 +647,7 @@ body{
         <!-- Sidebar -->
         <div class="dash-sidebar">
           <div class="dash-brand">
-            <div class="dash-brand-icon">S</div>
-            <div class="dash-brand-name">StockWise</div>
+            <img class="dash-brand-logo" src="/assets/stockwise-logo.png" width="584" height="126" alt="Stockwise"/>
           </div>
           <div class="nav-item active"><div class="nav-dot"></div>Dashboard</div>
           <div class="nav-item"><div class="nav-dot"></div>在庫管理</div>
@@ -777,7 +792,7 @@ body{
       </div>
       <div class="comp-card good">
         <div class="comp-head" style="color:var(--green)">
-          <span>✓</span> StockWise Basic · $49/mo
+          <span>✓</span> Stockwise Basic · $49/mo
         </div>
         <div class="comp-item"><span class="comp-icon" style="color:var(--green)">✓</span> Auto reorder point calculation</div>
         <div class="comp-item"><span class="comp-icon" style="color:var(--green)">✓</span> 12-week LT Pipeline</div>
@@ -786,7 +801,7 @@ body{
       </div>
       <div class="comp-card best">
         <div class="comp-head" style="color:var(--cyan)">
-          <span>★</span> StockWise Pro · $149/mo
+          <span>★</span> Stockwise Pro · $149/mo
         </div>
         <div class="comp-item"><span class="comp-icon" style="color:var(--cyan)">✓</span> Everything in Basic</div>
         <div class="comp-item"><span class="comp-icon" style="color:var(--cyan)">✓</span> SSN Tracking + CSV import</div>
@@ -797,9 +812,9 @@ body{
   </div>
 
   <!-- ── BOTTOM STRIP ── -->
-  <div class="bottom-strip" style="position:relative;z-index:2">
+  <footer class="bottom-strip" style="position:relative;z-index:2">
     <div>
-      <div class="bottom-logo">📦 StockWise</div>
+      <div class="bottom-logo"><img class="brand-logo" src="/assets/stockwise-logo.png" width="584" height="126" alt="Stockwise" loading="lazy"/></div>
       <div class="bottom-tagline">Smarter Inventory. Better Decisions. EN / 日本語.</div>
     </div>
     <div class="bottom-stats">
@@ -825,7 +840,7 @@ body{
   Start Free Trial →
 </a>      <div style="font-size:9px;color:var(--dimmer);text-align:center;margin-top:6px">14-day trial · No credit card</div>
     </div>
-  </div>
+  </footer>
 
 </div>
 </body>

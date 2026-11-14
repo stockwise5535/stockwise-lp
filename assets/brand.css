@@ -1,0 +1,31 @@
+/* V3 brand assets are copied unchanged from the application header. */
+.brand-identity { min-width:0; max-width:100%; }
+.brand-logo { display:block; width:320px; max-width:100%; height:auto; }
+.dash-brand-logo { display:block; width:120px; max-width:100%; height:auto; }
+.bottom-logo .brand-logo { width:190px; }
+.canvas { width:100%; max-width:1080px; min-width:0; }
+.hero-layout > div { min-width:0; }
+@media (max-width:800px) {
+  body { padding:12px; }
+  .hero { padding:36px 24px 0; }
+  .hero-layout { grid-template-columns:1fr !important; gap:28px !important; }
+  .hero-layout .headline { font-size:42px; }
+  .mockup-wrap { padding:0 24px; overflow-x:auto; }
+  .browser { min-width:760px; }
+  .feature-section { padding:32px 24px; }
+  .feature-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .bottom-strip { padding:24px; flex-wrap:wrap; gap:24px; }
+  .bottom-stats { flex-wrap:wrap; gap:24px; }
+}
+@media (max-width:480px) {
+  .brand-logo { width:280px; }
+  .logo-row { gap:0; }
+  .logo-sub { font-size:11px; letter-spacing:.02em; }
+  .hero-layout .headline { font-size:36px; }
+  .feature-grid, .compare-row { grid-template-columns:minmax(0,1fr); }
+  .bottom-strip > div { max-width:100%; }
+  .bottom-cta { white-space:normal; }
+}
+@media (max-width:480px) {
+  html[lang="ja"] .hero-layout .headline { font-size:clamp(23px,6.5vw,30px); }
+}
