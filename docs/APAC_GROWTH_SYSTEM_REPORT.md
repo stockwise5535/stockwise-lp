@@ -54,3 +54,17 @@ The user-specified product strategy, roadmap, next-task and relevant APAC report
 sections were read from development commit `f797b105c3fb16e9f815e2b9eed0dc3749f22a79`;
 those documents do not exist on the current app main or homepage main. This report
 records this homepage task only and does not relabel historical app verification.
+
+## Follow-up — user-approved Production release
+
+After the user explicitly requested publication, the GitHub installation access
+was updated by the owner. Normal push to main succeeded (no force push).
+Added explicit Vercel static build/output settings in `ca0d0ab`.
+GitHub Vercel status and Production deployment 7795406043 both report success
+for full revision `ca0d0ab67103f31a8e059a323f4abb96738d87b5`.
+Deployment: https://stockwise-blflnintl-stockwise5535s-projects.vercel.app
+
+This supersedes the original local-only release state above. The requested
+`stockwise-homepage.vercel.app` alias still returns proxy CONNECT 403 from this
+environment, so its alias mapping and live visual result are not independently
+confirmed. No email, billing, database or secret change was performed.

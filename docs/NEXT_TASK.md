@@ -3,7 +3,8 @@
 ## Status
 
 2026-11-14 (America/Los_Angeles): V3 brand alignment implemented and locally
-verified on `codex/align-v3-branding`. Production publication is NOT performed.
+verified on `codex/align-v3-branding`. After explicit user approval, main was pushed
+and Vercel Production deployment of `ca0d0ab` completed successfully.
 
 ## Scope completed
 
@@ -15,9 +16,9 @@ verified on `codex/align-v3-branding`. Production publication is NOT performed.
 
 ## Next single action
 
-Review this local commit and confirm the Vercel project's repository/root/build
-mapping for `https://stockwise-homepage.vercel.app/`. Publish only after explicit
-approval. Do not push a production-connected branch as part of this task.
+Confirm the live alias mapping for `https://stockwise-homepage.vercel.app/` and
+its refreshed appearance. The `stockwise-lp` Vercel project successfully deployed
+main `ca0d0ab`; the target alias itself remains inaccessible from this environment.
 
 The live alias could not be fetched from this environment (proxy CONNECT 403).
 Local tests do not establish the current live alias's source revision or appearance.
