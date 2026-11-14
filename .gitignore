@@ -1,0 +1,9 @@
+.git/
+.vercel/
+.env*
+node_modules/
+dist/
+artifacts/
+*.backup-*
+approved-layout-reference.png
+assets/demo.mov
