@@ -34,4 +34,5 @@ export async function main(revision){
   if(result.error||result.status!==0)throw Error('Deployment did not report success. No automatic retry.');
   for(const route of ['/en/','/ja/']){const r=await fetch('https://stockwise-homepage.vercel.app'+route,{cache:'no-store'});const html=await r.text();if(!r.ok||!html.includes('/assets/stockwise-logo.png')||html.includes('MIERUKA'))throw Error('Live alias verification failed: '+route);console.log('VERIFIED '+route+': Stockwise branding published');}
 }
-if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))main(process.argv[2]).catch(e=>{console.error(e.message);process.exitCode=1;});
+const entryPath=process.argv[1]?await fs.realpath(path.resolve(process.argv[1])).catch(()=>null):null;
+if(entryPath===fileURLToPath(import.meta.url))main(process.argv[2]).catch(e=>{console.error(e.message);process.exitCode=1;});
