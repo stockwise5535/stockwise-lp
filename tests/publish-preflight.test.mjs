@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import{preflight}from'../scripts/publish-from-original.mjs';
+const state=()=>({project:{projectName:'stockwise-homepage'},videoBytes:2000,manifest:{files:[{path:'ja/index.html',sha256:'new',originalSha256:'old'},{path:'favicon.svg',sha256:'icon',originalSha256:null}]},current:{'ja/index.html':'old','favicon.svg':null}});
+test('only original reviewed files or exact replay accepted',()=>{const x=state();assert.doesNotThrow(()=>preflight(x));x.current['ja/index.html']='new';x.current['favicon.svg']='icon';assert.doesNotThrow(()=>preflight(x));});
+test('wrong project, missing video or manual edits stop before writes/deploy',()=>{for(const mutate of[x=>x.project.projectName='stockwise-lp',x=>x.videoBytes=0,x=>x.current['ja/index.html']='manual edit',x=>x.current['favicon.svg']='existing unrelated icon']){const x=state();mutate(x);assert.throws(()=>preflight(x),/STOP/);}});

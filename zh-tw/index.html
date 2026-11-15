@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MIERUKA | AI 驅動的庫存與供應鏈平台</title>
-  <meta name="description" content="MIERUKA 透過 AI 串聯庫存、需求、交期與供應商資訊，讓供應鏈決策更簡單。" />
+  <title>Stockwise | AI 驅動的庫存與供應鏈平台</title>
+  <meta name="description" content="Stockwise 透過 AI 串聯庫存、需求、交期與供應商資訊，讓供應鏈決策更簡單。" />
   <style>
 :root{--text:#0b1530;--muted:#667085;--line:#e5e9f1;--blue:#1769ff;--bg:#f8faff;--shadow:0 18px 42px rgba(28,45,77,.08);--container:1460px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic UI","Yu Gothic",Meiryo,sans-serif;color:var(--text);background:linear-gradient(180deg,#f8faff 0%,#fff 100%);-webkit-font-smoothing:antialiased}a{text-decoration:none;color:inherit}.container{max-width:var(--container);margin:auto;padding:0 34px}
@@ -15,14 +15,31 @@ header{position:sticky;top:0;z-index:20;background:rgba(249,251,255,.92);backdro
 .hero-card-title{font-size:19px;line-height:1.5;margin:6px 0 15px;font-weight:700;text-align:center;letter-spacing:-.02em}.video-card{background:#061831;border-radius:22px;padding:12px;box-shadow:0 22px 54px rgba(2,10,26,.17)}.video-shell{border-radius:14px;overflow:hidden;background:#061831}.video-shell video{display:block;width:100%;height:auto;background:#061831}
 .sections{padding:5px 0 58px}.content-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:55px;align-items:start}.section-title{font-size:18px;font-weight:700;margin:0 0 12px}.insight-card{display:block;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}.insight-card img{display:block;width:100%;height:auto}.insight-meta{padding:17px 22px}.insight-link{display:inline-flex;align-items:center;gap:8px;color:#1769ff;font-weight:700;font-size:14px}.coming-title{margin-top:16px;font-size:16px;font-weight:700}.placeholder-row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:12px}.placeholder{height:46px;display:grid;place-items:center;border:1px solid var(--line);border-radius:13px;background:#fff;color:#758096;font-size:12px}.feature-block h3{font-size:38px;line-height:1.24;letter-spacing:-.035em;margin:0 0 14px;font-weight:760}.feature-block>p{margin:0 0 24px;color:#667085;font-size:16px;line-height:1.8}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:19px;padding:22px 17px;min-height:250px;box-shadow:0 12px 30px rgba(15,23,42,.045)}.icon{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;font-size:24px;margin:0 auto 19px}.i1{background:#edf4ff;color:#1769ff}.i2{background:#ecfbf4;color:#0eae78}.i3{background:#f4f0ff;color:#8157ee}.i4{background:#fff1eb;color:#f16823}.card h4{margin:0 0 11px;font-size:18px;line-height:1.35;text-align:center;letter-spacing:-.025em}.card p{margin:0;color:#687386;font-size:12.5px;line-height:1.75}.cta-band{margin-top:22px;background:linear-gradient(180deg,#f6f9ff,#edf3ff);border:1px solid #dce6fb;border-radius:20px;padding:22px 25px;display:flex;align-items:center;justify-content:space-between;gap:18px}.cta-band strong{font-size:18px;line-height:1.5;letter-spacing:-.02em}.btn-row{display:flex;gap:12px;flex-wrap:wrap}.btn-secondary{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:13px;background:#fff;border:1px solid #dbe4f2;color:#315076;font-weight:700;font-size:13px}footer{padding:16px 0 48px;color:#7c8799;font-size:12px}
 @media(max-width:1150px){.hero-grid,.content-grid{grid-template-columns:1fr}.hero-grid{gap:34px}.cards{grid-template-columns:repeat(2,1fr)}h1{font-size:52px}.hero-card-title{text-align:left}}@media(max-width:760px){.container{padding:0 18px}.menu a:not(.cta){display:none}.lang-select{max-width:112px}.nav{height:72px}.brand{font-size:24px}.brand img{width:36px;height:36px}.hero{padding-top:28px}h1{font-size:40px}.lead{font-size:16px}.ask-label{font-size:23px}.chips,.cards,.placeholder-row{grid-template-columns:1fr}.cta-band{flex-direction:column;align-items:flex-start}.feature-block h3{font-size:32px}.card{min-height:auto}}
+
+/* Exact V3 header artwork; dark treatment for the existing light navigation. */
+.brand img{width:210px;height:auto;border-radius:0;object-fit:contain;filter:brightness(0)}
+.hero-grid>*,.content-grid>*{min-width:0}.input-wrap input{min-width:0}
+@media(max-width:760px){.nav{height:auto;min-height:72px;flex-wrap:wrap;gap:12px;padding-top:12px;padding-bottom:12px}.brand img{width:190px;height:auto}.menu{width:100%;justify-content:space-between;gap:10px}.menu .cta{font-size:13px;padding:10px 14px}.pill{max-width:100%;line-height:1.6}}
 </style>
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Stockwise" />
+  <meta property="og:title" content="Stockwise | AI 驅動的庫存與供應鏈平台" />
+  <meta property="og:description" content="Stockwise 透過 AI 串聯庫存、需求、交期與供應商資訊，讓供應鏈決策更簡單。" />
+  <meta property="og:image" content="https://stockwise-homepage.vercel.app/assets/social-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Stockwise hexagonal logo and wordmark" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stockwise | AI 驅動的庫存與供應鏈平台" />
+  <meta name="twitter:image" content="https://stockwise-homepage.vercel.app/assets/social-preview.png" />
 </head>
 <body>
   <header>
     <div class="container nav">
       <a href="#" class="brand">
-        <img src="../assets/mieruka-icon.svg" alt="MIERUKA logo" />
-        <span>MIERUKA</span>
+        <img src="/assets/stockwise-logo.png" alt="Stockwise" width="584" height="126" />
       </a>
       <nav class="menu">
         <a href="#pricing">價格</a>
@@ -33,7 +50,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(249,251,255,.92);backdro
           <option value="/zh-cn/" >简体中文</option>
         </select>
         <a href="https://stockwise-app-1qz9.vercel.app/" class="ghost">登入</a>
-        <a href="https://stockwise-app-1qz9.vercel.app/" class="cta" target="_blank" rel="noopener">試用 MIERUKA →</a>
+        <a href="https://stockwise-app-1qz9.vercel.app/" class="cta" target="_blank" rel="noopener">試用 Stockwise →</a>
       </nav>
     </div>
   </header>
@@ -44,7 +61,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(249,251,255,.92);backdro
         <div>
           <div class="pill">AI-Powered Inventory & Supply Chain Platform</div>
           <h1>讓庫存判斷更簡單。<br>守住營收。<br>減輕現場負擔。</h1>
-          <p class="lead">MIERUKA AI 串聯庫存、需求、交期與供應商資訊，協助團隊更早發現缺貨風險，並做出更好的補貨與採購判斷。</p>
+          <p class="lead">Stockwise AI 串聯庫存、需求、交期與供應商資訊，協助團隊更早發現缺貨風險，並做出更好的補貨與採購判斷。</p>
           <p class="ask-label">有任何供應鏈問題，都可以問。</p>
           <div class="input-wrap">
             <input id="questionInput" type="text" placeholder="請輸入您的供應鏈問題…" />
@@ -116,9 +133,9 @@ header{position:sticky;top:0;z-index:20;background:rgba(249,251,255,.92);backdro
             </div>
           </div>
           <div class="cta-band" id="try">
-            <strong>用 MIERUKA 改變庫存決策方式，<br>守護企業未來。</strong>
+            <strong>用 Stockwise 改變庫存決策方式，<br>守護企業未來。</strong>
             <div class="btn-row">
-              <a href="https://stockwise-app-1qz9.vercel.app/" class="cta" target="_blank" rel="noopener">試用 MIERUKA →</a>
+              <a href="https://stockwise-app-1qz9.vercel.app/" class="cta" target="_blank" rel="noopener">試用 Stockwise →</a>
             </div>
           </div>
         </div>
@@ -127,7 +144,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(249,251,255,.92);backdro
   </main>
 
   <footer>
-    <div class="container">© 2026 MIERUKA. All rights reserved.</div>
+    <div class="container">© 2026 Stockwise. All rights reserved.</div>
   </footer>
 
   <script>

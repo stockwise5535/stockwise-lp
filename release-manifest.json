@@ -1,0 +1,51 @@
+{
+  "targetProject": "stockwise-homepage",
+  "routingSha256": "c78acf89f88d248c02bc1322897c2775ecf440ecb9c94afca1595a4931865654",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "080a69c4aa798c7f73fc563167974b2f4cf552228ea3ae96a94550945fd77328",
+      "originalSha256": "20de1613a87a2b1282524ee1fe53a22adfa8b764a2ce408a5565d87d747c4661"
+    },
+    {
+      "path": "en/index.html",
+      "sha256": "e6f0fa8e3e6052c90dfd980506c7b3f1f414e1982525baae13cb75b49aee3137",
+      "originalSha256": "2dff0eb3a1cd513a6cde26ffbd6c6b4c2ccc19a67ac3ca6f674ccb5f702642d7"
+    },
+    {
+      "path": "ja/index.html",
+      "sha256": "24b7efbf75f14464a3b23ba7aab9427bb1b136ac6fbf3a60be7d8936d4912060",
+      "originalSha256": "abc24b53ea27386bd8224ba12bcab74219b2d769161da64263f712a76b5ab928"
+    },
+    {
+      "path": "zh-cn/index.html",
+      "sha256": "0065b78db6dd6545dc5e217b34602d255df7733af2f1ca9323d87aa50bd3a659",
+      "originalSha256": "b4c704c9ef6742a20ed0bd20bd6ec9b489266c00d69d33e2e39bc70cf97c2fe4"
+    },
+    {
+      "path": "zh-tw/index.html",
+      "sha256": "f3965000d62df720d092d04c59f47aa79d32a6b41ab79399503dc845661b9c3a",
+      "originalSha256": "5052a27da8bfaa3c2911486dc2e40833ce1a01b3c6b1e949325ce7c0287a6542"
+    },
+    {
+      "path": "assets/stockwise-logo.png",
+      "sha256": "ca2c4062eb34b20213caf9e2ef5fc24d298d31ae8cda3416ea8c279895a17abd",
+      "originalSha256": null
+    },
+    {
+      "path": "assets/social-preview.png",
+      "sha256": "f791c3c94d66f915e88874ae38aa4971efdf7367db007cc72ecba1e7f52453e2",
+      "originalSha256": null
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "373b2b6a881eee8e62faeb84f03d7a322b700f3da0b44802044e757b1f69f9fa",
+      "originalSha256": null
+    },
+    {
+      "path": ".vercelignore",
+      "sha256": "fed608fe376c2e05083540e240f86416c4387e42aed0315edcca66dc74cbb7e5",
+      "originalSha256": null
+    }
+  ]
+}

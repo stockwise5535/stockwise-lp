@@ -1,0 +1,12 @@
+.git
+.vercel
+.env*
+node_modules
+dist
+artifacts
+tests
+scripts
+docs
+*.backup-*
+README*
+approved-layout-reference.png

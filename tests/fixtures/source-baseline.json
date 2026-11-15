@@ -1,0 +1,27 @@
+{
+  "pages": {
+    "index.html": {
+      "bodyHash": "dcc46d30bab4e0770cd73db8c17c55cc50bde8b0e68ef0b603475d621c777c2b",
+      "originalFileHash": "20de1613a87a2b1282524ee1fe53a22adfa8b764a2ce408a5565d87d747c4661"
+    },
+    "en/index.html": {
+      "bodyHash": "a1445a2aefa6f75bf1eb37aa8a300ac9772468a23cc66ea235c7370290179dc3",
+      "originalFileHash": "2dff0eb3a1cd513a6cde26ffbd6c6b4c2ccc19a67ac3ca6f674ccb5f702642d7"
+    },
+    "ja/index.html": {
+      "bodyHash": "6bba678396174b6c5d8d1ce9be9e28c3ef42494bc8c1c9356a06d3d155e66126",
+      "originalFileHash": "abc24b53ea27386bd8224ba12bcab74219b2d769161da64263f712a76b5ab928"
+    },
+    "zh-cn/index.html": {
+      "bodyHash": "4a7c5f077d750dda202e0c92644d46c3cbd7be76e492eef7534330e474480629",
+      "originalFileHash": "b4c704c9ef6742a20ed0bd20bd6ec9b489266c00d69d33e2e39bc70cf97c2fe4"
+    },
+    "zh-tw/index.html": {
+      "bodyHash": "faeefa3059d369d8e010d4d1f160aee52548e33642a76d85087b213ad964da72",
+      "originalFileHash": "5052a27da8bfaa3c2911486dc2e40833ce1a01b3c6b1e949325ce7c0287a6542"
+    }
+  },
+  "routingHash": "c78acf89f88d248c02bc1322897c2775ecf440ecb9c94afca1595a4931865654",
+  "posterHash": "7a668af147590d9078b45d8f6aba68f1e5ae5383eaaccf1bcdfd112f559edd7b",
+  "insightHash": "0a7c2805f2799f57c738eed5c5b8dc5d5bd4530b9f9412343c7ea68734e3f765"
+}
